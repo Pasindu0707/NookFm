@@ -12,8 +12,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-16 bg-gradient-to-br from-primary-400 via-primary-600 to-secondary-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-tr from-secondary-900/40 via-transparent to-white/20"></div>
+    <section className="py-16 bg-primary-600 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
