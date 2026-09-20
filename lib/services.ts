@@ -12,6 +12,10 @@ import {
   MdFireExtinguisher,
   MdSecurity,
   MdAssignment,
+  MdDesignServices,
+  MdWeekend,
+  MdKitchen,
+  MdChair,
 } from 'react-icons/md'
 import {
   FiBriefcase,
@@ -104,17 +108,18 @@ const facilityServices: Service[] = [
   },
   {
     id: 'waste-management',
-    title: 'Waste Management',
-    shortTitle: 'Waste Management',
+    title: 'Rubbish & Waste Management',
+    shortTitle: 'Rubbish & Waste',
     icon: MdRecycling,
     image: unsplash('1611284446314-60a58ac0deb9'),
     description:
-      'Clean, compliant and well-organised waste areas with coordinated bin and recycling services.',
+      'Efficient waste collection and rubbish removal that keeps your site clean, hygienic and well organised.',
     features: [
-      'Bin management',
+      'Bin management and waste collection',
       'Waste-area maintenance',
-      'Bulk-rubbish removal',
+      'Bulk-rubbish and furniture removal',
       'Recycling coordination',
+      'Responsible waste disposal',
     ],
   },
   {
@@ -221,6 +226,70 @@ const facilityServices: Service[] = [
       'Maintenance reporting',
       'Emergency call-out coordination',
       'Multi-site service management',
+    ],
+  },
+  {
+    id: 'interior-design',
+    title: 'Building Interior Design',
+    shortTitle: 'Interior Design',
+    icon: MdDesignServices,
+    image: unsplash('1770808250138-2ce5da80b312'),
+    description:
+      'Designing and transforming aged care interiors into welcoming, functional and accessible spaces.',
+    features: [
+      'Resident rooms',
+      'Communal lounges and dining areas',
+      'Reception and entry areas',
+      'Staff facilities',
+      'Accessible, functional space planning',
+    ],
+  },
+  {
+    id: 'building-furnishings',
+    title: 'Building Furnishings',
+    shortTitle: 'Building Furnishings',
+    icon: MdWeekend,
+    image: unsplash('1693578616322-c8abe6c7393d'),
+    description:
+      'Supplying and installing quality furnishings, fixtures and interior fittings that lift comfort and appearance.',
+    features: [
+      'Furnishings, fixtures and interior fittings',
+      'Supply and installation',
+      'Resident comfort and accessibility',
+      'Safety-conscious selections',
+      'Improved overall appearance',
+    ],
+  },
+  {
+    id: 'electrical-appliances',
+    title: 'Electrical Appliances Supply',
+    shortTitle: 'Appliance Supply',
+    icon: MdKitchen,
+    image: unsplash('1632923565835-6582b54f2105'),
+    description:
+      'Reliable electrical appliances for resident accommodation, commercial kitchens, laundries and communal areas.',
+    features: [
+      'Resident accommodation appliances',
+      'Commercial kitchen equipment',
+      'Laundry appliances',
+      'Staff and communal area appliances',
+      'Energy efficient and easy to use',
+    ],
+  },
+  {
+    id: 'furniture-supply',
+    title: 'Furniture Supply & Design',
+    shortTitle: 'Furniture Supply',
+    icon: MdChair,
+    image: unsplash('1564078516393-cf04bd966897'),
+    description:
+      'Customised furniture solutions designed around the comfort and accessibility needs of elderly residents.',
+    features: [
+      'Ergonomic seating',
+      'Dining furniture',
+      'Bedroom furniture',
+      'Storage units',
+      'Communal area furnishings',
     ],
   },
 ]

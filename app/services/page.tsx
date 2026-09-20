@@ -165,7 +165,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 via-primary-500 to-purple-600 dark:from-primary-700 dark:via-primary-600 dark:to-purple-700 text-white transition-colors duration-200">
+      <section className="py-20 bg-gradient-to-br from-primary-400 via-primary-600 to-secondary-900 dark:from-primary-500 dark:via-primary-700 dark:to-secondary-900 text-white transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
             <div className="text-center max-w-3xl mx-auto">
