@@ -21,14 +21,14 @@ export default function Hero() {
       }}
     >
       {/* Light scrim so the photo stays visible but text remains readable */}
-      <div className="absolute inset-0 bg-white/75 dark:bg-black/65"></div>
+      <div className="absolute inset-0 bg-white/25 dark:bg-black/65"></div>
 
       {/* Gradient overlay for additional depth */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/20 to-primary-100/60 dark:from-secondary-900/70 dark:via-transparent dark:to-primary-900/40"></div>
-      
+      <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white/10 to-primary-100/30 dark:from-secondary-900/70 dark:via-transparent dark:to-primary-900/40"></div>
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-0 pb-12 lg:pb-16 w-full">
-        <div className="text-center">
+        <div className="text-center max-w-4xl mx-auto rounded-3xl bg-white/70 dark:bg-transparent backdrop-blur-sm dark:backdrop-blur-0 px-5 py-8 md:px-10 md:py-12 shadow-xl dark:shadow-none ring-1 ring-white/60 dark:ring-0">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
