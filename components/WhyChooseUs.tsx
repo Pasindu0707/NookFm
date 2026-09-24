@@ -20,7 +20,7 @@ const reasons = [
   {
     icon: <FiCheckCircle className="w-8 h-8" />,
     title: 'Licensed & Insured Trades',
-    description: 'Qualified electricians, plumbers, HVAC technicians and pest controllers, inducted before they reach your site.',
+    description: 'Qualified electricians, plumbers, HVAC technicians, pest controllers and builders, inducted before they reach your site.',
   },
   {
     icon: <FiSmartphone className="w-8 h-8" />,
@@ -29,8 +29,8 @@ const reasons = [
   },
   {
     icon: <FiAward className="w-8 h-8" />,
-    title: 'Compliance Focused',
-    description: 'Fire safety, exit-light testing, test and tag and safety signage kept on schedule.',
+    title: 'Complete Building Solutions',
+    description: 'Maintenance, renovations, interior design, fit-out and supply, all under one roof.',
   },
   {
     icon: <FiStar className="w-8 h-8" />,
@@ -67,10 +67,10 @@ export default function WhyChooseUs() {
         <ScrollAnimation>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-sans">
-              Why Choose NookFM?
+              Why Choose Us?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              NookFM gives property owners and managers complete visibility, reliability and confidence. We bring every facility service together under one accountable partner, delivered by licensed and fully insured professionals.
+              Nook Facility Management gives property owners and managers complete visibility, reliability and confidence. We bring every facility service together under one accountable partner, delivered by licensed and fully insured professionals.
               <br />
               <br />
               With a commitment to excellence and a customer-first approach, we keep every property safe, compliant and well maintained.

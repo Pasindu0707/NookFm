@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { FiMenu, FiX, FiPhone, FiChevronDown, FiSun, FiMoon } from 'react-icons/fi'
+import { FiMenu, FiX, FiMail, FiChevronDown, FiSun, FiMoon } from 'react-icons/fi'
 import { getImagePath } from '@/lib/images'
 import { useDarkMode } from './DarkModeProvider'
 import { services } from '@/lib/services'
@@ -22,7 +22,7 @@ export default function Header() {
 
   const menuItems = [
     { label: 'Home', href: '/' },
-    { label: 'Why choose NookFM', href: '/about' },
+    { label: 'Why choose us', href: '/about' },
     { label: 'Get a free quote', href: '/contact' },
   ]
 
@@ -52,7 +52,7 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 src={getImagePath("/nookfm-logo.png")}
-                alt="NookFM Facility Management Logo"
+                alt="Nook Facility Management Logo"
                 width={1060}
                 height={252}
                 className="h-9 md:h-10 lg:h-11 w-auto dark:hidden"
@@ -60,7 +60,7 @@ export default function Header() {
               />
               <Image
                 src={getImagePath("/nookfm-logo-white.png")}
-                alt="NookFM Facility Management Logo"
+                alt="Nook Facility Management Logo"
                 width={1060}
                 height={252}
                 className="h-9 md:h-10 lg:h-11 w-auto hidden dark:block"
@@ -142,11 +142,11 @@ export default function Header() {
               )}
             </button>
             <a
-              href={site.phoneHref}
+              href={`mailto:${site.email}`}
               className="flex items-center space-x-2 text-primary-700 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-semibold"
             >
-              <FiPhone className="w-5 h-5" />
-              <span>{site.phone}</span>
+              <FiMail className="w-5 h-5" />
+              <span>{site.email}</span>
             </a>
             <Link
               href="/contact"
@@ -253,12 +253,12 @@ export default function Header() {
               </div>
               
               <a
-                href={site.phoneHref}
+                href={`mailto:${site.email}`}
                 className="flex items-center space-x-2 text-primary-700 dark:text-primary-400 font-semibold pt-2 min-h-[44px] touch-manipulation"
                 style={{ WebkitTapHighlightColor: 'transparent' }}
               >
-                <FiPhone className="w-5 h-5" />
-                <span>{site.phone}</span>
+                <FiMail className="w-5 h-5" />
+                <span>{site.email}</span>
               </a>
               <Link
                 href="/contact"

@@ -7,8 +7,8 @@ import ContactSection from '@/components/ContactSection'
 import FAQ from '@/components/FAQ'
 
 export const metadata = {
-  title: 'Facility Management & Property Maintenance | NookFM',
-  description: 'NookFM Facility Management: property maintenance, commercial painting, grounds and landscaping, electrical, plumbing, HVAC, fire safety, pest and waste management. One point of contact for every site.',
+  title: 'Facilities Management & Property Maintenance | Nook Facility Management',
+  description: 'Nook Facility Management: integrated facilities management, property maintenance, painting, grounds and landscaping, electrical, plumbing, HVAC, pest control, rubbish removal, renovations, interior design and furniture supply. One point of contact for every site.',
   keywords: [
     'facility management',
     'property maintenance',
@@ -18,26 +18,25 @@ export const metadata = {
     'electrical maintenance',
     'plumbing maintenance',
     'HVAC servicing',
-    'fire safety compliance',
     'multi-site facility management',
   ],
   openGraph: {
-    title: 'Facility Management & Property Maintenance | NookFM',
-    description: 'Property maintenance, painting, grounds, electrical, plumbing, HVAC, fire safety and more, managed through one point of contact.',
+    title: 'Facilities Management & Property Maintenance',
+    description: 'Integrated facilities management, property maintenance and building solutions for commercial, residential, industrial and aged care facilities.',
     url: site.url,
     images: [
       {
         url: photos.hero,
         width: 1200,
         height: 800,
-        alt: 'NookFM Facility Management',
+        alt: 'Nook Facility Management',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Facility Management & Property Maintenance | NookFM',
-    description: 'Property maintenance, painting, grounds, electrical, plumbing, HVAC, fire safety and more, managed through one point of contact.',
+    title: 'Facilities Management & Property Maintenance',
+    description: 'Integrated facilities management, property maintenance and building solutions for commercial, residential, industrial and aged care facilities.',
     images: [photos.hero],
   },
 }

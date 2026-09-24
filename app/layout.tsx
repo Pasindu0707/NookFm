@@ -13,11 +13,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'NookFM - Facility Management & Property Maintenance | Maintain - Protect - Manage',
-    template: '%s | NookFM',
+    default: 'Nook Facility Management - Facilities Management & Property Maintenance | QUALITY • CARE • EXCELLENCE',
+    template: '%s | Nook Facility Management',
   },
   description:
-    'NookFM Facility Management delivers property maintenance, commercial painting, grounds and landscaping, electrical, plumbing, HVAC, fire safety, pest and waste management for commercial properties across Australia. One point of contact for every site.',
+    'Nook Facility Management delivers integrated facilities management, property maintenance, commercial painting, grounds and landscaping, electrical, plumbing, HVAC, pest control, rubbish removal, renovations, interior design, appliance and furniture supply for commercial, residential, industrial and aged care facilities.',
   keywords: [
     'facility management',
     'facility management Queensland',
@@ -33,10 +33,9 @@ export const metadata: Metadata = {
     'plumbing maintenance',
     'air conditioning servicing',
     'HVAC maintenance',
-    'fire safety compliance',
-    'test and tag',
-    'security and access support',
-    'contractor management',
+    'building renovations',
+    'interior design and fit-out',
+    'furniture and appliance supply',
     'multi-site facility management',
     'handyman services',
   ],
@@ -53,23 +52,23 @@ export const metadata: Metadata = {
     locale: 'en_AU',
     url: site.url,
     siteName: site.name,
-    title: 'NookFM - Facility Management & Property Maintenance',
+    title: 'Nook Facility Management - Facilities Management & Property Maintenance',
     description:
-      'Property maintenance, painting, grounds, electrical, plumbing, HVAC, fire safety and more, managed through one point of contact.',
+      'Integrated facilities management, property maintenance and building solutions for commercial, residential, industrial and aged care facilities.',
     images: [
       {
         url: photos.hero,
         width: 1200,
         height: 800,
-        alt: 'NookFM Facility Management',
+        alt: 'Nook Facility Management',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NookFM - Facility Management & Property Maintenance',
+    title: 'Nook Facility Management - Facilities Management & Property Maintenance',
     description:
-      'Property maintenance, painting, grounds, electrical, plumbing, HVAC, fire safety and more, managed through one point of contact.',
+      'Integrated facilities management, property maintenance and building solutions for commercial, residential, industrial and aged care facilities.',
     images: [photos.hero],
   },
   robots: {

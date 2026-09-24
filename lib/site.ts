@@ -1,16 +1,14 @@
 /**
- * Central business details for NookFM.
- * TODO: replace the placeholder contact details below with NookFM's real ones.
+ * Central business details for Nook Facility Management.
+ * TODO: replace the placeholder details below with the real ones.
  */
 export const site = {
-  name: 'NookFM',
+  name: 'Nook Facility Management',
   legalName: 'Nook Facility Management',
-  tagline: 'Maintain - Protect - Manage',
+  tagline: 'QUALITY • CARE • EXCELLENCE',
   url: 'https://www.nookfm.com.au',
   domain: 'nookfm.com.au',
-  phone: '1300 000 000', // TODO: real phone number
-  phoneHref: 'tel:1300000000',
-  email: 'info@nookfm.com.au', // TODO: confirm email
+  email: 'admin@nookfm.com.au',
   addressLine1: 'Brisbane', // TODO: street address
   addressLine2: 'QLD, Australia',
   hours: 'Mon-Fri: 7:00am – 5:00pm', // TODO: confirm office hours

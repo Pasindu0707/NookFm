@@ -12,7 +12,7 @@ export default function StructuredData() {
     logo: `${site.url}/nookfm-logo.png`,
     image: photos.hero,
     description:
-      'NookFM Facility Management provides property maintenance, commercial painting, grounds and landscaping, electrical, plumbing, HVAC, fire safety, pest and waste management for commercial properties.',
+      'Nook Facility Management provides integrated facilities management, property maintenance, building exterior restoration, painting, grounds and landscaping, rubbish removal, pest control, HVAC, electrical, plumbing, renovations, interior design, fit-out and furniture and appliance supply.',
     // TODO: add full street address, postcode and geo coordinates once confirmed
     address: {
       '@type': 'PostalAddress',
@@ -20,7 +20,6 @@ export default function StructuredData() {
       addressRegion: 'QLD',
       addressCountry: 'AU',
     },
-    telephone: site.phoneHref.replace('tel:', ''),
     email: site.email,
     priceRange: '$$',
     areaServed: {

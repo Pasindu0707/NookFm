@@ -7,28 +7,28 @@ import { site } from '@/lib/site'
 
 const faqs = [
   {
-    question: 'What does NookFM do?',
-    answer: 'NookFM is a facility management company. We look after the maintenance, compliance and day-to-day running of commercial properties, including property maintenance, painting, grounds and landscaping, waste and pest management, electrical, plumbing, air-conditioning, fire safety and security support.',
+    question: 'What does Nook Facility Management do?',
+    answer: 'Nook Facility Management is an integrated facilities management company. We look after the maintenance, improvement and day-to-day running of commercial, residential, industrial and aged care properties, including property maintenance and repairs, building exterior restoration, painting, grounds and landscaping, rubbish removal, pest control, electrical, plumbing, HVAC, renovations, interior design, fit-out and furniture and appliance supply.',
   },
   {
     question: 'Can you manage all of our trades through one contact?',
-    answer: 'Yes. That is what we do best. NookFM becomes your single point of contact for every service on your site. We schedule the work, manage the contractors, check the quality and report back to you, so you do not have to juggle multiple providers.',
+    answer: 'Yes. That is what we do best. We become your single point of contact for every service on your site. We schedule the work, manage the contractors, check the quality and report back to you, so you do not have to juggle multiple providers.',
   },
   {
     question: 'Are your trades licensed and insured?',
-    answer: 'Yes. All electrical, plumbing, HVAC, pest and fire-safety work is carried out by appropriately licensed and insured professionals, and every contractor is inducted before attending your site.',
+    answer: 'Yes. All electrical, plumbing, HVAC, pest control and building work is carried out by appropriately licensed and insured professionals, and every contractor is inducted before attending your site.',
   },
   {
     question: 'Do you offer preventative maintenance programs?',
-    answer: 'Yes. We build scheduled maintenance programs around your property, covering inspections, HVAC servicing, test and tag, exit-light testing, gutter cleaning, pest treatments and more. Preventative work reduces breakdowns and costly repairs.',
+    answer: 'Yes. We build scheduled maintenance programs around your property, covering inspections, HVAC servicing, gutter and roof care, grounds maintenance, pest treatments and more. Preventative work reduces breakdowns and costly repairs.',
   },
   {
-    question: 'Can you help us stay compliant with fire and safety requirements?',
-    answer: 'Yes. We coordinate fire-equipment inspections, emergency and exit-light testing, test and tag, and safety signage, and keep records so you are ready for audits.',
+    question: 'Do you handle renovations and fit-outs as well as maintenance?',
+    answer: 'Yes. Alongside day-to-day maintenance we deliver renovations, refurbishments and remodelling, interior design and space planning, building furnishings and fit-out, and the supply and installation of furniture and electrical appliances.',
   },
   {
     question: 'Do you handle emergencies and after-hours call-outs?',
-    answer: 'Yes. Our Rapid Response service coordinates emergency call-outs 24/7 for issues like burst pipes, electrical faults, air-conditioning breakdowns, storm damage and security or access problems.',
+    answer: 'Yes. Our Rapid Response service coordinates emergency call-outs 24/7 for issues like burst pipes, electrical faults, air-conditioning breakdowns and storm damage.',
   },
   {
     question: 'Do you manage multiple sites?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'How do I get a quote?',
-    answer: `Call us on ${site.phone}, fill out our online quote form, or email ${site.email}. We will arrange a site visit if needed and provide a clear, no-obligation quote.`,
+    answer: `Fill out our online quote form or email us at ${site.email}. We will arrange a site visit if needed and provide a clear, no-obligation quote.`,
   },
 ]
 

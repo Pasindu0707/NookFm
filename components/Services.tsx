@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ScrollAnimation from './ScrollAnimation'
 import { getImagePath } from '@/lib/images'
 import { services } from '@/lib/services'
-import { photos } from '@/lib/site'
+import { site, photos } from '@/lib/site'
 
 export default function Services() {
   return (
@@ -32,7 +32,7 @@ export default function Services() {
                 {/* Mobile, Tablet, and iPad Image */}
                 <Image
                   src={getImagePath(photos.teamMobile)}
-                  alt="NookFM facility management team"
+                  alt="Nook Facility Management team"
                   width={600}
                   height={700}
                   className="w-full h-auto object-cover xl:hidden"
@@ -40,7 +40,7 @@ export default function Services() {
                 {/* Desktop/Laptop Image */}
                 <Image
                   src={getImagePath(photos.team)}
-                  alt="NookFM facility management team"
+                  alt="Nook Facility Management team"
                   width={600}
                   height={700}
                   className="w-full h-auto object-cover hidden xl:block"
@@ -50,7 +50,7 @@ export default function Services() {
             <ScrollAnimation direction="left" delay={0.2}>
               <div>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                  At the heart of NookFM is a simple management model: one accountable team that looks after every trade, inspection and service on your site. Our clients get a clear, reliable structure with fast communication, quick decisions and seamless delivery, without the cost of managing multiple contractors themselves.
+                  At the heart of Nook Facility Management is a simple management model: one accountable team that looks after every trade, inspection and service on your site. Our clients get a clear, reliable structure with fast communication, quick decisions and seamless delivery, without the cost of managing multiple contractors themselves.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
                   Our facility managers are hands on and proactive. Through scheduled site inspections, preventative maintenance and transparent reporting, we catch problems early and keep your property safe, compliant and performing at its best.
@@ -60,7 +60,7 @@ export default function Services() {
                     Comprehensive Transition Plan
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                    As part of every new partnership, NookFM implements a comprehensive Transition Plan tailored specifically to the site. This plan covers every element needed for a smooth and efficient onboarding process, including:
+                    As part of every new partnership, Nook Facility Management implements a comprehensive Transition Plan tailored specifically to the site. This plan covers every element needed for a smooth and efficient onboarding process, including:
                   </p>
                   <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                     <li className="flex items-start">
@@ -73,7 +73,7 @@ export default function Services() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary-600 mr-3 mt-1">•</span>
-                      <span><strong>Compliance planning</strong>, including fire safety, test and tag, exit-light and safety inspection schedules.</span>
+                      <span><strong>Maintenance planning</strong>, including inspection schedules, servicing intervals and priority works.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary-600 mr-3 mt-1">•</span>
@@ -111,7 +111,7 @@ export default function Services() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/4]">
                 <Image
                   src={getImagePath(photos.responseVan)}
-                  alt="NookFM Rapid Response vehicle"
+                  alt="Nook Facility Management Rapid Response vehicle"
                   fill
                   className="object-cover"
                 />
@@ -149,7 +149,7 @@ export default function Services() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-accent-600 mr-3 mt-1">•</span>
-                      <span><strong>Security and after-hours access issues</strong></span>
+                      <span><strong>Urgent repairs and make-safe works</strong></span>
                     </li>
                   </ul>
                 </div>
@@ -165,16 +165,16 @@ export default function Services() {
         <ScrollAnimation>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 font-sans">
-              Facility Management Services
+              Our Comprehensive Services
               <br />
-              Maintain - Protect - Manage
+              {site.tagline}
             </h2>
             <div className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              <p className="mb-4">
-                From everyday repairs to compliance and multi-site coordination, we keep your property safe, functional and looking its best.
+              <p className="mb-4 font-semibold text-gray-800 dark:text-gray-200">
+                Integrated Facilities Management, Property Maintenance &amp; Building Solutions
               </p>
               <p>
-                One partner, one point of contact and one clear report for every service on your site.
+                We provide a comprehensive range of professional facilities management, property maintenance, building improvement and supply services, delivering tailored solutions for commercial, residential, industrial and aged care facilities.
               </p>
             </div>
           </div>
@@ -193,7 +193,7 @@ export default function Services() {
                 <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
                   <Image
                     src={getImagePath(service.image)}
-                    alt={`${service.title} - NookFM Facility Management`}
+                    alt={`${service.title} - Nook Facility Management`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />

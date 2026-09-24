@@ -8,8 +8,8 @@ import About from '@/components/About'
 import WhyChooseUs from '@/components/WhyChooseUs'
 
 export const metadata = {
-  title: 'Why Choose NookFM - Facility Management Partner',
-  description: 'Why choose NookFM Facility Management: one point of contact, licensed and insured trades, preventative maintenance, compliance support and 24/7 rapid response for commercial properties.',
+  title: 'Why Choose Us - Your Facilities Management Partner',
+  description: 'Why choose Nook Facility Management: one point of contact, licensed and insured trades, preventative maintenance and 24/7 rapid response for commercial, residential, industrial and aged care facilities.',
   keywords: [
     'facility management company',
     'facility management Australia',
@@ -18,7 +18,7 @@ export const metadata = {
     'multi-site facility management',
   ],
   openGraph: {
-    title: 'Why Choose NookFM - Facility Management Partner',
+    title: 'Why Choose Us - Your Facilities Management Partner',
     description: 'One point of contact, licensed trades, preventative maintenance and 24/7 rapid response for commercial properties.',
     url: `${site.url}/about`,
     images: [photos.building],
@@ -38,7 +38,7 @@ export default function AboutPage() {
       icon: <FiUsers className="w-12 h-12" />,
       title: 'Our People',
       description:
-        'Our people and trade partners are what make NookFM different. We work only with skilled, licensed and insured professionals who share our commitment to doing the job properly.',
+        'Our people and trade partners are what make Nook Facility Management different. We work only with skilled, licensed and insured professionals who share our commitment to doing the job properly.',
     },
     {
       icon: <FiAward className="w-12 h-12" />,
@@ -72,10 +72,10 @@ export default function AboutPage() {
           <ScrollAnimation>
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 font-sans">
-                Why Choose NookFM
+                Why Choose Us
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                NookFM Facility Management brings every service your property
+                Nook Facility Management brings every service your property
                 needs under one accountable partner, built on reliability,
                 transparency and care.
               </p>
@@ -115,10 +115,10 @@ export default function AboutPage() {
                   Our Story
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  NookFM was created to take the hassle out of looking after
+                  Nook Facility Management was created to take the hassle out of looking after
                   commercial property. Instead of juggling separate
-                  electricians, plumbers, painters, gardeners and compliance
-                  providers, our clients have one team that manages it all.
+                  electricians, plumbers, painters, gardeners and
+                  suppliers, our clients have one team that manages it all.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                   We combine personal, responsive service with licensed trades,
@@ -127,9 +127,9 @@ export default function AboutPage() {
                   is happening on your site.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Centred on our promise to{' '}
+                  Centred on our promise of{' '}
                   <span className="font-semibold text-primary-700 dark:text-primary-400">
-                    Maintain, Protect & Manage
+                    Quality, Care & Excellence
                   </span>
                   , our facility management is tailored to each client, from a
                   single building to a multi-site portfolio.
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <Image
                     src={getImagePath(photos.crew)}
-                    alt="NookFM facility management team"
+                    alt="Nook Facility Management team"
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover"
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <Image
                     src={getImagePath(photos.building)}
-                    alt="Commercial building maintained by NookFM"
+                    alt="Commercial building maintained by Nook Facility Management"
                     width={600}
                     height={300}
                     className="w-full h-auto object-cover"
@@ -202,7 +202,7 @@ export default function AboutPage() {
       {/* About Section */}
       <About />
 
-      {/* Why Choose NookFM Section */}
+      {/* Why Choose Us Section */}
       <WhyChooseUs />
       
     </div>

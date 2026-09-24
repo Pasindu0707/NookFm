@@ -7,25 +7,27 @@ import { services } from '@/lib/services'
 import { site } from '@/lib/site'
 
 export const metadata = {
-  title: 'Facility Management Services | Maintenance, Painting, Grounds, Electrical, Plumbing & More',
-  description: 'NookFM facility services: property maintenance, commercial painting, grounds and landscaping, building exterior maintenance, waste and pest management, electrical, plumbing, HVAC, fire and safety compliance, security and multi-site facility coordination.',
+  title: 'Our Comprehensive Services',
+  description: 'Integrated facilities management, property maintenance and building solutions: building exterior maintenance and restoration, grounds and landscaping, commercial and industrial painting, pest control, rubbish removal, HVAC, electrical, plumbing, furnishings and fit-out, interior design, appliance and furniture supply, renovations and refurbishments.',
   keywords: [
-    'property maintenance services',
-    'commercial painting',
-    'grounds and landscaping',
-    'building exterior maintenance',
-    'waste management',
-    'pest management',
-    'electrical maintenance',
-    'plumbing maintenance',
-    'air conditioning servicing',
-    'fire safety compliance',
-    'security and access',
-    'facility coordination',
+    'integrated facilities management',
+    'property maintenance and repairs',
+    'building exterior restoration',
+    'grounds maintenance and landscaping',
+    'commercial and industrial painting',
+    'pest control services',
+    'rubbish removal and waste management',
+    'air conditioning and HVAC services',
+    'electrical installation and repair',
+    'plumbing installation and repair',
+    'building furnishings and fit-out',
+    'interior design and space planning',
+    'appliance and furniture supply',
+    'building renovations and refurbishments',
   ],
   openGraph: {
-    title: 'Facility Management Services | NookFM',
-    description: 'Property maintenance, painting, grounds, electrical, plumbing, HVAC, fire safety and more, managed through one point of contact.',
+    title: 'Our Comprehensive Services | Nook Facility Management',
+    description: 'Integrated facilities management, property maintenance and building solutions for commercial, residential, industrial and aged care facilities.',
     url: `${site.url}/services`,
     images: [services[0].image],
   },
@@ -40,14 +42,14 @@ export default function ServicesPage() {
           <ScrollAnimation>
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary-600 via-primary-500 to-purple-600 bg-clip-text text-transparent mb-6">
-                Our Services
+                Our Comprehensive Services
               </h1>
+              <p className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">
+                Integrated Facilities Management, Property Maintenance &amp; Building Solutions
+              </p>
               <div className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                <p className="mb-4">
-                  Everything your property needs to stay safe, compliant and well presented, delivered by licensed trades and managed by one accountable team.
-                </p>
                 <p>
-                  Choose a single service or let NookFM look after your whole site, or your whole portfolio.
+                  We provide a comprehensive range of professional facilities management, property maintenance, building improvement and supply services, delivering tailored solutions for commercial, residential, industrial and aged care facilities.
                 </p>
               </div>
             </div>
@@ -90,6 +92,11 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-20 bg-gradient-to-b from-white via-primary-50/30 via-secondary-50/20 to-accent-50/30 dark:from-gray-900 dark:via-gray-800/30 dark:to-gray-900 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16 font-sans">
+              Our Core Services
+            </h2>
+          </ScrollAnimation>
           <div className="space-y-16">
             {services.map((service, index) => {
               const colorVariants = [
@@ -152,7 +159,7 @@ export default function ServicesPage() {
                   >
                     <Image
                       src={getImagePath(service.image)}
-                      alt={`${service.title} - NookFM`}
+                      alt={`${service.title} - Nook Facility Management`}
                       fill
                       className="object-cover"
                     />
@@ -161,6 +168,22 @@ export default function ServicesPage() {
               </ScrollAnimation>
             )})}
           </div>
+        </div>
+      </section>
+
+      {/* Closing Statement */}
+      <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollAnimation>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 font-sans">
+                Your Trusted Partner in Complete Facilities Management
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                From routine property maintenance and essential building services to comprehensive renovations, interior design and specialised equipment supply, we deliver integrated solutions designed to enhance the functionality, safety, presentation and long-term value of your property.
+              </p>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 

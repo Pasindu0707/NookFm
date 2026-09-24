@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FiPhone } from 'react-icons/fi'
+import { FiMail } from 'react-icons/fi'
 import { getImagePath } from '@/lib/images'
 import { site, photos } from '@/lib/site'
 
@@ -37,7 +37,7 @@ export default function Hero() {
           >
             <Image
               src={getImagePath("/nookfm-logo-white.png")}
-              alt="NookFM Facility Management Logo"
+              alt="Nook Facility Management Logo"
               width={1060}
               height={252}
               className="h-16 md:h-20 lg:h-24 xl:h-28 w-auto drop-shadow-lg"
@@ -63,10 +63,10 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base md:text-lg lg:text-xl text-white/95 mb-6 md:mb-8 leading-relaxed max-w-4xl mx-auto drop-shadow-md"
           >
-            From general repairs and painting to grounds, electrical, plumbing, HVAC and fire safety compliance, NookFM keeps your commercial property safe, compliant and looking its best.
+            From property maintenance and painting to grounds, electrical, plumbing, HVAC, renovations and interior fit-outs, Nook Facility Management keeps your property safe, functional and looking its best.
             <br />
             <br />
-            One accountable partner and one point of contact for every trade, every inspection and every site, so you can focus on running your business.
+            One accountable partner and one point of contact for every trade, every project and every site, so you can focus on running your business.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -81,11 +81,11 @@ export default function Hero() {
               Get Free Quote
             </Link>
             <a
-              href={site.phoneHref}
+              href={`mailto:${site.email}`}
               className="flex items-center justify-center space-x-2 bg-white/95 dark:bg-gray-800/95 text-primary-700 dark:text-primary-400 px-8 py-4 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-all font-semibold text-lg border-2 border-white/50 dark:border-primary-500 transform hover:scale-105 shadow-lg"
             >
-              <FiPhone className="w-5 h-5" />
-              <span>{site.phone}</span>
+              <FiMail className="w-5 h-5" />
+              <span>{site.email}</span>
             </a>
           </motion.div>
         </div>

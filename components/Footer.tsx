@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
+import { FiMail, FiMapPin } from 'react-icons/fi'
 import { FaFacebook } from 'react-icons/fa'
 import { getImagePath } from '@/lib/images'
 import { site } from '@/lib/site'
@@ -16,7 +16,7 @@ export default function Footer() {
             <Link href="/" className="block mb-4">
               <Image
                 src={getImagePath("/nookfm-logo-white.png")}
-                alt="NookFM Facility Management Logo"
+                alt="Nook Facility Management Logo"
                 width={1060}
                 height={252}
                 className="h-9 md:h-10 w-auto"
@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
           
             <p className="text-gray-400 dark:text-gray-500 mb-4">
-              NookFM Facility Management keeps commercial properties safe,
+              Nook Facility Management keeps commercial properties safe,
               compliant and well maintained, with one accountable partner
               for every trade and every site.
             </p>
@@ -81,15 +81,6 @@ export default function Footer() {
                   {site.addressLine1}<br />
                   {site.addressLine2}
                 </span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <FiPhone className="w-5 h-5 flex-shrink-0" />
-                <a
-                  href={site.phoneHref}
-                  className="hover:text-white dark:hover:text-gray-200 transition-colors"
-                >
-                  {site.phone}
-                </a>
               </li>
               <li className="flex items-center space-x-2">
                 <FiMail className="w-5 h-5 flex-shrink-0" />

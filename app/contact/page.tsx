@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FiPhone, FiMail, FiMapPin, FiClock, FiMessageSquare } from 'react-icons/fi'
+import { FiMail, FiMapPin, FiClock, FiMessageSquare } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 import { site } from '@/lib/site'
 import { services } from '@/lib/services'
@@ -150,23 +150,6 @@ export default function ContactPage() {
                         {site.addressLine1}<br />
                       {site.addressLine2}
                       </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="text-primary-600 dark:text-primary-400 mt-1">
-                      <FiPhone className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
-                        Phone
-                      </h3>
-                      <a
-                        href={site.phoneHref}
-                        className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
-                      >
-                        {site.phone}
-                      </a>
                     </div>
                   </div>
 
@@ -388,7 +371,7 @@ export default function ContactPage() {
                   )}
                   {submitStatus === 'error' && (
                     <div className="p-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-700 rounded-lg text-red-800 dark:text-red-300 text-sm">
-                      There was an error. Please try again or contact us directly at {site.phone}
+                      There was an error. Please try again or email us directly at {site.email}
                     </div>
                   )}
                   <button
