@@ -111,9 +111,25 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 dark:border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 dark:text-gray-500 text-sm">
-              Copyright © {new Date().getFullYear()} {site.legalName} | Terms of
-              Use | Privacy Policy
+            <p className="text-gray-400 dark:text-gray-500 text-sm flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1">
+              <span>
+                Copyright © {new Date().getFullYear()} {site.legalName} | Terms
+                of Use | Privacy Policy
+              </span>
+              {site.facebook && (
+                <span className="inline-flex items-center gap-2">
+                  <span aria-hidden="true">|</span>
+                  <a
+                    href={site.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1 hover:text-white dark:hover:text-gray-200 transition-colors"
+                  >
+                    <FaFacebook className="w-4 h-4" />
+                    <span>Facebook</span>
+                  </a>
+                </span>
+              )}
             </p>
             <p className="text-gray-400 dark:text-gray-500 text-sm mt-4 md:mt-0">
               Acknowledgement of Country: We acknowledge the Traditional

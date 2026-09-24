@@ -12,7 +12,7 @@ export const site = {
   addressLine1: 'Brisbane', // TODO: street address
   addressLine2: 'QLD, Australia',
   hours: 'Mon-Fri: 7:00am – 5:00pm', // TODO: confirm office hours
-  facebook: '', // TODO: Facebook page URL (link hidden while empty)
+  facebook: 'https://www.facebook.com/profile.php?id=100093625762062',
   // EmailJS keys for the quote form. While these are empty the form opens
   // the visitor's email app instead, so no leads go to the wrong inbox.
   emailjs: {
